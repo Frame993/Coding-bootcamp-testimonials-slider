@@ -1,0 +1,226 @@
+:root {
+    /* ### Primary */
+
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    background-image: url('./images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 20%;
+    /* position: relative; */
+}
+
+div.container {
+    position: absolute;
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    /* position: relative; */
+    /* padding: 2rem; */
+    /* border: 1px solid red; */
+}
+
+section {
+    height: 70%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 10;
+    background-image: url('./images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: top left 10%;
+    background-size: auto 25%;
+    /* border: 1px solid red; */
+}
+
+
+footer {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+p {
+    width: 60%;
+    color: var(--dark-blue);
+    font-weight: 300;
+    /* border: 1px solid red; */
+}
+
+footer {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer h4 {
+    color: var(--grayish-blue);
+    font-weight: 300;
+    font-size: 24px;
+}
+
+/* image /////////////////////////////////////////////////////*/
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.img {
+    border-radius: .5rem;
+    max-width: 600px;
+    box-shadow: 0 10px 20px 0 hsla(240, 18%, 77%, .2);
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.pattern-bg {
+    position: absolute;
+    width: 140%;
+    z-index: -1;
+}
+
+/* image /////////////////////////////////////////////////////*/
+
+.buttons {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    bottom: -2%;
+    left: 15%;
+    box-shadow: 0 10px 20px 0 hsla(240, 18%, 77%, .2);
+    border-radius: 50%;
+    z-index: 99;
+}
+
+button {
+    padding: .8rem 1.2rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.prev {
+    border-radius: 50% 0 0 50%;
+}
+
+.next {
+    border-radius: 0 50% 50% 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        height: auto;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: auto 8%;
+    }
+
+    div.container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 2rem 0;
+        position: relative;
+       
+        /* border: 1px solid red; */
+    }
+
+    section {
+        gap: 1.5rem;
+        position: relative;
+        text-align: center;
+        background-position: top;
+        background-size: auto 18%;
+        /* border: 1px solid red; */
+        padding: 2rem 0;
+    }
+
+    p {
+        width: 100%;
+        color: var(--dark-blue);
+        font-weight: 300;
+        font-size: 24px;
+        /* border: 1px solid red; */
+    }
+
+    figure {
+        width: max-content;
+    }
+
+    .img {
+        max-width: 300px;
+    }
+
+    .pattern-bg {
+        width: 120%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer h4 {
+
+        font-size: 18px;
+    }
+
+    .buttons {
+        bottom: -4%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+
+}   
