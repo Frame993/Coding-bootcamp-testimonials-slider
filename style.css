@@ -35,6 +35,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: red; */
+    /* border: 1px solid red; */
     /* gap: 32px; */
 }
 
@@ -46,6 +48,7 @@ section {
     align-items: center;
     gap: 32px;
     /* background-color: rgb(255, 255, 255); */
+    /* border: 1px solid red; */
 }
 
 .Testimonials {
@@ -90,7 +93,6 @@ span {
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-
 }
 
 .Tanya-img {
@@ -98,7 +100,6 @@ span {
     border-radius: .5rem;
     box-shadow: 0px 29px 47px -26px hsl(240, 18%, 77%);
     /* border: 1px solid red; */
-
 }
 
 .bg-pattern {
@@ -113,7 +114,7 @@ span {
     display: flex;
     width: fit-content;
     bottom: -4%;
-    left: 20%;
+    left: 25%;
     box-shadow: 0 10px 20px 0 hsla(240, 18%, 77%, .2);
     border-radius: 50%;
     z-index: 99;
@@ -124,7 +125,6 @@ button {
     border: none;
     background-color: white;
     cursor: pointer;
-
 }
 
 .prev {
@@ -136,13 +136,19 @@ button {
 }
 
 /* container */
-
+.Tanya {
+    display: none;
+}
 .John {
     display: none;
-    position: absolute;
-    z-index: -1;
+    /* position: absolute;
+    z-index: -1; */
 }
 
+.active {
+    display: flex;
+    position: absolute;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -181,7 +187,7 @@ button {
     /* image */
     .photo {
         position: relative;
-        margin-bottom: 16px;
+        /* margin-bottom: 16px; */
     }
 
     .Tanya-img {
@@ -198,7 +204,8 @@ button {
     }
 
     .buttons {
-        bottom: -8%;
+        position: absolute;
+        bottom: -10%;
         left: 35%;
     }
 
