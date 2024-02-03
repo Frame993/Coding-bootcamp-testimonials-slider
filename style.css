@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 body {
@@ -35,9 +34,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
-    /* border: 1px solid red; */
-    /* gap: 32px; */
 }
 
 section {
@@ -139,10 +135,9 @@ button {
 .Tanya {
     display: none;
 }
+
 .John {
     display: none;
-    /* position: absolute;
-    z-index: -1; */
 }
 
 .active {
@@ -208,6 +203,5 @@ button {
         bottom: -10%;
         left: 35%;
     }
-
 
 }

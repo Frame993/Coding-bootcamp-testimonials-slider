@@ -10,9 +10,6 @@ let currentIndex = 0;
 ///////////////////////////////////////////////
 cards[currentIndex].classList.add("active");
 
-// next.addEventListener("click", nextCard);
-// prev.addEventListener("click", prevCard);
-
 console.log(next);
 console.log(prev);
 
