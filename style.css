@@ -154,12 +154,13 @@ button {
 
     section {
         padding: 64px 0;
-        width: 90%;
+        
         flex-direction: column-reverse;
         text-align: center;
     }
 
     .Testimonials {
+        width: 90%;
         padding-top: 32px;
         background-position: top center;
         background-size: 20%;
@@ -186,6 +187,12 @@ button {
     }
 
     .Tanya-img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .John-img {
         width: 80%;
         height: 100%;
         object-fit: cover;
